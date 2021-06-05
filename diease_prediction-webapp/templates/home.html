@@ -1,0 +1,103 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diease predictor</title>
+
+    <style type=text/css>
+        div {
+            color: white;
+        }
+        
+        h1 {
+            color: 'white';
+            font-family: arial, sans-serif;
+            font-size: 55px;
+            font-weight: bold;
+            margin-top: 200px;
+        }
+        
+        h2 {
+            color: 'white';
+            font-family: arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 400px;
+        }
+        
+        body {
+            background-image:url("{% static 'images/1.jpg'%}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        input[type=submit] {
+            background-color: #693996;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 15px;
+            border-radius: 21px;
+            width: 25%;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #4dc3ff;
+            color: rgb(37, 25, 25);
+            animation: shake 0.5s forwards 0s linear !important;
+        }
+        
+        @keyframes shake {
+            0% {
+                transform: rotate(3deg);
+            }
+            20% {
+                transform: rotate(-3deg);
+            }
+            40% {
+                transform: rotate(3deg);
+            }
+            60% {
+                transform: rotate(-3deg);
+            }
+            80% {
+                transform: rotate(3deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Welcome to Diease predictor</h1>
+
+
+        <form action="predict_diab">
+            <input type="submit" value="Let's predict Diabetes">
+        </form>
+        <form action="predict_hrt">
+            <input type="submit" value="Let's predict Heart Diease">
+        </form>
+        <form action="predict_breast">
+            <input type="submit" value="Let's predict Breast Cancer">
+        </form>
+        <form action="predict_kdn">
+            <input type="submit" value="Let's predict Kiney Diease">
+        </form>
+        <form action="predict_lung">
+            <input type="submit" value="Let's predict Lung cancer">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container pt-5">
+        <div class="row">
+
+            <h1>Kideny Results</h1>
+
+            <table class="table table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">id</th>
+
+                        <th scope="col">age</th>
+                        <th scope="col">blood_pressure</th>
+                        <th scope="col">specific_gravity</th>
+                        <th scope="col">albumin</th>
+                        <th scope="col">sugar</th>
+                        <th scope="col">red_blood_cells</th>
+                        <th scope="col">pus_cell</th>
+                        <th scope="col">pus_cell_clumps</th>
+                        <th scope="col">bacteria</th>
+                        <th scope="col">blood_glucose_random</th>
+
+                        <th scope="col">blood_urea</th>
+                        <th scope="col">serum_creatinine</th>
+                        <th scope="col">sodium</th>
+                        <th scope="col">hemoglobin</th>
+                        <th scope="col">packed_cell_volume</th>
+                        <th scope="col">white_blood_cell_count</th>
+                        <th scope="col">red_blood_cell_count</th>
+                        <th scope="col">hypertension</th>
+                        <th scope="col">diabetes_mellitus</th>
+                        <th scope="col">coronary_artery_disease</th>
+
+                        <th scope="col">appetite</th>
+                        <th scope="col">pedal_edema</th>
+                        <th scope="col">anemia</th>
+
+                        <th scope="col">Result</th>
+                        <th scope="col">Accuracy(%)</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in dataset %}
+
+                    <tr>
+                        <th scope="row">{{ data.id }}</th>
+                        <td>{{ data.age }}</td>
+                        <td>{{ data.blood_pressure }}</td>
+                        <td>{{ data.specific_gravity }}</td>
+                        <td>{{ data.albumin }}</td>
+                        <td>{{ data.sugar }}</td>
+                        <td>{{ data.red_blood_cells }}</td>
+                        <td>{{ data.pus_cell }}</td>
+                        <td>{{ data.pus_cell_clumps }}</td>
+                        <td>{{ data.bacteria }}</td>
+                        <td>{{ data.blood_glucose_random }}</td>
+
+                        <td>{{ data.blood_urea }}</td>
+                        <td>{{ data.serum_creatinine }}</td>
+                        <td>{{ data.sodium }}</td>
+                        <td>{{ data.hemoglobin }}</td>
+                        <td>{{ data.packed_cell_volume }}</td>
+                        <td>{{ data.white_blood_cell_count }}</td>
+                        <td>{{ data.red_blood_cell_count }}</td>
+                        <td>{{ data.hypertension }}</td>
+                        <td>{{ data.diabetes_mellitus }}</td>
+                        <td>{{ data.coronary_artery_disease }}</td>
+
+                        <td>{{ data.appetite }}</td>
+                        <td>{{ data.pedal_edema }}</td>
+                        <td>{{ data.anemia }}</td>
+
+                        <td>{{ data.PredictRes }}</td>
+                        <td>{{ data.Accuracy }}</td>
+
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

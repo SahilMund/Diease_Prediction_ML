@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container pt-5">
+        <div class="row">
+
+            <h1>Diabetes Results</h1>
+
+            <table class="table table-hover">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">id</th>
+
+                        <th scope="col">radius_mean</th>
+                        <th scope="col">texture_mean</th>
+                        <th scope="col">perimeter_mean</th>
+                        <th scope="col">area_mean</th>
+                        <th scope="col">smoothness_mean</th>
+                        <th scope="col">compactness_mean</th>
+                        <th scope="col">concavity_mean</th>
+                        <th scope="col">concave_points_mean</th>
+                        <th scope="col">symmetry_mean</th>
+                        <th scope="col">fractal_dimension_mean</th>
+
+                        <th scope="col">radius_se</th>
+                        <th scope="col">texture_se</th>
+                        <th scope="col">perimeter_se</th>
+                        <th scope="col">area_se</th>
+                        <th scope="col">smoothness_se</th>
+                        <th scope="col">compactness_se</th>
+                        <th scope="col">concavity_se</th>
+                        <th scope="col">concave_points_se</th>
+                        <th scope="col">symmetry_se</th>
+                        <th scope="col">fractal_dimension_se</th>
+
+                        <th scope="col">radius_worst</th>
+                        <th scope="col">texture_worst</th>
+                        <th scope="col">perimeter_worst</th>
+                        <th scope="col">area_worst</th>
+                        <th scope="col">smoothness_worst</th>
+                        <th scope="col">compactness_worst</th>
+                        <th scope="col">concavity_worst</th>
+                        <th scope="col">concave_points_worst</th>
+                        <th scope="col">symmetry_worst</th>
+                        <th scope="col">fractal_dimension_worst</th>
+
+                        <th scope="col">Result</th>
+                        <th scope="col">Accuracy</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in dataset %}
+
+                    <tr>
+                        <th scope="row">{{ data.id }}</th>
+                        <td>{{ data.radius_mean }}</td>
+                        <td>{{ data.texture_mean }}</td>
+                        <td>{{ data.perimeter_mean }}</td>
+                        <td>{{ data.area_mean }}</td>
+                        <td>{{ data.smoothness_mean }}</td>
+                        <td>{{ data.compactness_mean }}</td>
+                        <td>{{ data.concavity_mean }}</td>
+                        <td>{{ data.concave_points_mean }}</td>
+                        <td>{{ data.symmetry_mean }}</td>
+                        <td>{{ data.fractal_dimension_mean }}</td>
+
+                        <td>{{ data.radius_se }}</td>
+                        <td>{{ data.texture_se }}</td>
+                        <td>{{ data.perimeter_se }}</td>
+                        <td>{{ data.area_se }}</td>
+                        <td>{{ data.smoothness_se }}</td>
+                        <td>{{ data.compactness_se }}</td>
+                        <td>{{ data.concavity_se }}</td>
+                        <td>{{ data.concave_points_se }}</td>
+                        <td>{{ data.symmetry_se }}</td>
+                        <td>{{ data.fractal_dimension_se }}</td>
+
+                        <td>{{ data.radius_worst }}</td>
+                        <td>{{ data.texture_worst }}</td>
+                        <td>{{ data.perimeter_worst }}</td>
+                        <td>{{ data.area_worst }}</td>
+                        <td>{{ data.smoothness_worst }}</td>
+                        <td>{{ data.compactness_worst }}</td>
+                        <td>{{ data.concavity_worst }}</td>
+                        <td>{{ data.concave_points_worst }}</td>
+                        <td>{{ data.symmetry_worst }}</td>
+                        <td>{{ data.fractal_dimension_worst }}</td>
+
+                        <td>{{ data.PredictRes }}</td>
+                        <td>{{ data.Accuracy }}</td>
+
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

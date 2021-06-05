@@ -1,0 +1,298 @@
+<!DOCTYPE html>{% load static %}
+
+<html>
+
+<head>
+    <title>Kidney Diease</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="{%  static  'css/style2.css'  %}" rel="stylesheet" />
+    <link href="{%  static  'css/style.css'  %}" rel="stylesheet" />
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" />
+
+    <link href="{%  static  'css/bootstrap.min.css'  %}" rel="stylesheet" />
+    <link href="{%  static  'css/now-ui-kit.css'  %}" rel="stylesheet" />
+    <link href="{%  static  'css/medium-editor.min.css'  %}" rel="stylesheet" />
+
+    <style>
+        body {
+            background-image: url("{% static 'images/3.jpg' %}");
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Prediction Results</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>age : <span id="val1"></span></div>
+                    <div>blood_pressure : <span id="val2"></span></div>
+                    <div>specific_gravity : <span id="val3"></span></div>
+                    <div>albumin : <span id="val4"></span></div>
+                    <div>sugar : <span id="val5"></span></div>
+                    <div>red_blood_cells : <span id="val6"></span></div>
+                    <div>pus_cell : <span id="val7"></span></div>
+                    <div>pus_cell_clumps : <span id="val8"></span></div>
+                    <div>bacteria : <span id="val9"></span></div>
+                    <div>blood_glucose_random : <span id="val10"></span></div>
+
+                    <div>blood_urea : <span id="val11"></span></div>
+                    <div>serum_creatinine : <span id="val12"></span></div>
+                    <div>sodium : <span id="val13"></span></div>
+                    <div>hemoglobin : <span id="val14"></span></div>
+                    <div>packed_cell_volume : <span id="val15"></span></div>
+                    <div>white_blood_cell_count : <span id="val16"></span></div>
+                    <div>red_blood_cell_count : <span id="val17"></span></div>
+                    <div>hypertension : <span id="val18"></span></div>
+                    <div>diabetes_mellitus : <span id="val19"></span></div>
+                    <div>coronary_artery_disease : <span id="val20"></span></div>
+
+                    <div>appetite : <span id="val21"></span></div>
+                    <div>pedal_edema : <span id="val22"></span></div>
+                    <div>anemia : <span id="val23"></span></div>
+
+
+                    <h5 class="pt-3">Result :</h5>
+                    <div id="prediction"></div>
+                    <h5 class="pt-3">Accuracy is :</h5>
+                    <div id="Accuracy"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a class="btn btn-primary" href="results_kdn/" role="button">View DB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>Predict Kidney disease</h1>
+    <div class="bg-agile">
+        <div class="book-appointment">
+            <h2>Medical Information</h2>
+
+            <form action="" id="post-form">
+                {% csrf_token %}
+                <div class="left-agileits-w3layouts same">
+                    <div class="gaps">
+                        <p>age</p>
+                        <input type="text " id="age" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>blood_pressure</p>
+                        <input type="text " id="blood_pressure" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>specific_gravity</p>
+                        <input type="text " id="specific_gravity" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>albumin</p>
+                        <input type="text " id="albumin" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>sugar</p>
+                        <input type="text " id="sugar" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>red_blood_cells</p>
+                        <input type="text " id="red_blood_cells" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>pus_cell</p>
+                        <input type="text " id="pus_cell" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>pus_cell_clumps</p>
+                        <input type="text " id="pus_cell_clumps" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>bacteria</p>
+                        <input type="text " id="bacteria" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>blood_glucose_random</p>
+                        <input type="text " id="blood_glucose_random" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>blood_urea</p>
+                        <input type="text " id="blood_urea" placeholder="" />
+                    </div>
+                </div>
+
+                <div class="right-agileinfo same">
+                    <div class="gaps">
+                        <p>serum_creatinine</p>
+                        <input type="text " id="serum_creatinine" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>sodium</p>
+                        <input type="text " id="sodium" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>hemoglobin</p>
+                        <input type="text " id="hemoglobin" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>packed_cell_volume</p>
+                        <input type="text " id="packed_cell_volume" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>white_blood_cell_count</p>
+                        <input type="text " id="white_blood_cell_count" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>red_blood_cell_count</p>
+                        <input type="text " id="red_blood_cell_count" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>hypertension</p>
+                        <input type="text " id="hypertension" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>diabetes_mellitus</p>
+                        <input type="text " id="diabetes_mellitus" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>coronary_artery_disease</p>
+                        <input type="text " id="coronary_artery_disease" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>appetite</p>
+                        <input type="text " id="appetite" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>pedal_edema</p>
+                        <input type="text " id="pedal_edema" placeholder="" />
+                    </div>
+                    <div class="gaps">
+                        <p>anemia</p>
+                        <input type="text " id="anemia" placeholder="" />
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <br><br>
+                <!-- <input type="submit" class="btn btn-primary"> -->
+                <button type="submit" value="Submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript " src="{%  static  'js/jquery-2.1.4.min.js'  %}"></script>
+    <!-- Calendar -->
+    <script type="text/javascript " src="{%  static  'js/jquery-2.1.4.min.js'  %}"></script>
+    <script type="text/javascript " src="{%  static  'js/jquery-2.1.4.min.js'  %}"></script>
+    <link rel="stylesheet " href="{%  static  'css/jquery-ui.css'  %}" />
+    <script src="{%  static  'js/jquery-ui.js' %} "></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+    <script>
+        $(document).on("submit", "#post-form", function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: '{% url "kdnDiease:submit_prediction_kdn" %}',
+                data: {
+                    age: $("#age").val(),
+                    blood_pressure: $("#blood_pressure").val(),
+                    specific_gravity: $("#specific_gravity").val(),
+                    albumin: $("#albumin").val(),
+                    sugar: $("#sugar").val(),
+                    red_blood_cells: $("#red_blood_cells").val(),
+                    pus_cell: $("#pus_cell").val(),
+                    pus_cell_clumps: $("#pus_cell_clumps").val(),
+                    bacteria: $("#bacteria").val(),
+                    blood_glucose_random: $("#blood_glucose_random").val(),
+
+                    blood_urea: $("#blood_urea").val(),
+                    serum_creatinine: $("#serum_creatinine").val(),
+                    sodium: $("#sodium").val(),
+                    hemoglobin: $("#hemoglobin").val(),
+                    packed_cell_volume: $("#packed_cell_volume").val(),
+                    white_blood_cell_count: $("#white_blood_cell_count").val(),
+                    red_blood_cell_count: $("#red_blood_cell_count").val(),
+                    hypertension: $("#hypertension").val(),
+                    diabetes_mellitus: $("#diabetes_mellitus").val(),
+                    coronary_artery_disease: $("#coronary_artery_disease").val(),
+
+                    appetite: $("#appetite").val(),
+                    pedal_edema: $("#pedal_edema").val(),
+                    anemia: $("#anemia").val(),
+
+                    csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val(),
+                    action: "post",
+                },
+                success: function(json) {
+                    document.forms["post-form"].reset();
+                    document.getElementById("prediction").innerHTML = json["result"];
+                    document.getElementById("Accuracy").innerHTML = json["accuracy"];
+
+                    document.getElementById("val1").innerHTML = json["age"];
+                    document.getElementById("val2").innerHTML = json["blood_pressure"];
+                    document.getElementById("val3").innerHTML = json["specific_gravity"];
+                    document.getElementById("val4").innerHTML = json["albumin"];
+                    document.getElementById("val5").innerHTML = json["sugar"];
+                    document.getElementById("val6").innerHTML = json["red_blood_cells"];
+                    document.getElementById("val7").innerHTML = json["pus_cell"];
+                    document.getElementById("val8").innerHTML = json["pus_cell_clumps"];
+                    document.getElementById("val9").innerHTML = json["bacteria"];
+                    document.getElementById("val10").innerHTML = json["blood_glucose_random"];
+
+                    document.getElementById("val11").innerHTML = json["blood_urea"];
+                    document.getElementById("val12").innerHTML = json["serum_creatinine"];
+                    document.getElementById("val13").innerHTML = json["sodium"];
+                    document.getElementById("val14").innerHTML = json["hemoglobin"];
+                    document.getElementById("val15").innerHTML = json["packed_cell_volume"];
+                    document.getElementById("val16").innerHTML = json["white_blood_cell_count"];
+                    document.getElementById("val17").innerHTML = json["red_blood_cell_count"];
+                    document.getElementById("val18").innerHTML = json["hypertension"];
+                    document.getElementById("val19").innerHTML = json["diabetes_mellitus"];
+                    document.getElementById("val20").innerHTML = json["coronary_artery_disease"];
+
+                    document.getElementById("val21").innerHTML = json["appetite"];
+                    document.getElementById("val22").innerHTML = json["pedal_edema"];
+                    document.getElementById("val23").innerHTML = json["anemia"];
+                },
+                error: function(xhr, errmsg, err) {},
+            });
+        });
+    </script>
+</body>
+
+</html>
