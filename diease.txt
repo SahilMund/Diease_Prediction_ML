@@ -1,0 +1,222 @@
+Heart
+---------------
+Age-
+Babies (0-2 years): very rare
+Toddlers (3-5 years): very rare
+Children (6-13 years): very rare
+Teenagers (14-18 years): very rare
+Young adults (19-40 years): common
+Adults (41-60 years): very common
+Seniors (60+ years): very common
+Sex-
+Although men tend to develop coronary artery disease earlier in life, after age 65 the risk of heart disease in women is almost the same as in men. Women have many of the same risk factors for heart disease as men, such as smoking, high blood pressure, and high cholesterol.
+Cp-Constrictive pericarditis (CP) is a chronic inflammatory process, often characterised by chronic scarring, fibrosis and calcification of the pericardium associated with diastolic dysfunction, eventually leading to low cardiac output and heart failure.
+Trestbps-
+resting blood pressure (in mm Hg on admission to the hospital) chol - serum cholestoral in mg/dl. fbs - fasting blood sugar > 120 mg/dl (1 = true; 0 = false) restecg - resting electrocardiographic results (0 = normal; 1 = having ST-T; 2 = hypertrophy)
+Cholesterol-
+Too much bad cholesterol (non-HDL) can be harmful because it sticks to the inside walls of your arteries. This can lead to fatty material (atheroma) building up - this process is known as atherosclerosis. It makes it harder for blood to flow through, which can lead to a heart attack or a stroke
+fbs -
+ fasting blood sugar > 120 mg/dl (1 = true; 0 = false) restecg - resting electrocardiographic results (0 = normal; 1 = having ST-T; 2 = hypertrophy) thalach - maximum heart
+ rate achieved.
+ Restecg-
+ restecg - resting electrocardiographic results (0 = normal; 1 = having ST-T; 2 = hypertrophy) thalach - maximum heart rate achieved. exang - exercise induced angina (1 = yes; 0 = no) oldpeak - ST depression induced by exercise relative to rest.
+ Thalach-
+  maximum heart rate achieved. exang - exercise induced angina (1 = yes; 0 = no) oldpeak - ST depression induced by exercise relative to rest.
+  Exang-
+  exercise induced angina (1 = yes; 0 = no) oldpeak - ST depression induced by exercise relative to rest. slope - the slope of the peak exercise ST segment (1 = upsloping; 2 = flat; 3 = downsloping) ca - number of major vessels (0-3) colored by flourosopy.
+  Old peak-
+  exercise relative to rest(oldpeak), the slope of the peak. exercise ST segment(slope), number of major vessels. colored by flourosopy(ca) and thalassemia(thal) for. prediction of heart diseases.
+  Slope-
+  The ST segment shift relative to exercise-induced increments in heart rate, the ST/heart rate slope (ST/HR slope), has been proposed as a more accurate ECG criterion for diagnosing significant coronary artery disease (CAD).
+  Ca-
+  men who took calcium supplements had an increased risk of a heart attack, stroke or other cardiovascular diseases. But other studies suggest that both men and women who take calcium supplements have a higher risk of heart disease.
+  Thal-
+  In severe beta thalassemia, both anemia and iron overload can damage the heart and cause problems like: Fast heartbeat. Abnormal heartbeat called arrhythmia. Congestive heart failure, when the heart can't pump enough blood.
+  Target-
+  Cardiovascular disease can take many forms: high blood pressure, coronary artery disease, valvular heart disease, stroke, or arrhythmias (irregular heartbeat). 
+  Major risk factors-
+  High blood pressure (hypertension)
+  High blood cholesterol
+  Diabetes
+  Obesity and Overweight
+  Smoking
+  Physical Inactivity
+  Gender
+  Heredity
+  Age
+Contributing Risk Factors-
+Stress
+Sex hormones
+Birth control pills
+Alcohol
+
+
+Kidney 
+------------
+Age-
+Babies (0-2 years): very rare
+Toddlers (3-5 years): very rare
+Children (6-13 years): very rare
+Teenagers (14-18 years): very rare
+Young adults (19-40 years): common
+Adults (41-60 years): very common
+Seniors (60+ years): very common
+Blood pressure-
+Your kidneys play a key role in keeping your blood pressure in a healthy range. Diseased kidneys are less able to help regulate blood pressure. As a result, blood pressure increases. If you have CKD, high blood pressure makes it more likely that your kidney disease will get worse and you will have heart problems.
+Specific gravity-
+Ideally, urine specific gravity results will fall between 1.002 and 1.030 if your kidneys are functioning normally. Specific gravity results above 1.010 can indicate mild dehydration. The higher the number, the more dehydrated you may be.
+Albumin-
+Anything above 30 mg/g may mean you have kidney disease, even if your GFR number is above 60.
+Sugar-
+Abnormally high amounts of sugar in the urine, known as glycosuria, are usually the result of high blood sugar levels. High blood sugar usually occurs in diabetes, especially when untreated. Normally, when blood is filtered in the kidneys, some sugar remains in the fluid that will later become urine.
+RBC-
+high count of red blood cells in the urine can indicate infection, trauma, tumors, or kidney stones. If red blood cells seen under microscopy look distorted, they suggest kidney as the possible source and may arise due to kidney inflammation (glomerulonephritis
+Pus cell-
+When kidneys are injured, protein leaks into your urine. Having protein in your urine suggests that your kidney's filtering units are damaged by kidney disease. Glucose (sugar) is usually a sign of diabetes. White blood cells (pus cells) are signs of infection.
+Pus cell clump-
+Pyuria is the condition of urine containing white blood cells or pus. Defined as the presence of 6-10 or more neutrophils per high power field of unspun, voided mid-stream urine, it can be a sign of a bacterial urinary tract infection. Pyuria may be present in the people with sepsis, or in older people with pneumonia.
+Bacteria-
+Bacteria that enter your urinary tract through the tube that carries urine from your body (urethra) can multiply and travel to your kidneys. This is the most common cause of kidney infections. Bacteria from an infection elsewhere in your body also can spread through your bloodstream to your kidneys.
+Blood glucose random-
+Kidney failure means the kidneys are no longer able to remove waste and maintain the level of fluid and salts that the body needs. One cause of kidney failure is diabetes mellitus, a condition characterised by high blood glucose (sugar) levels.
+Blood urea-
+Concentration in patients with renal dysfunction can range from mildly increased to severely increased, depending on severity of disease. Those with end-stage renal failure, requiring renal replacement therapy (dialysis, renal transplantation) may have plasma/serum urea >50.0 mmol/L (BUN >140 mg/dL).
+Serum creatinine-
+A creatinine level of greater than 1.2 for women and greater than 1.4 for men may be an early sign that the kidneys are not working properly. As kidney disease progresses, the level of creatinine in the blood rises. This test is a measure of how well the kidneys are removing wastes and excess fluid from the blood.
+Sodium-
+The average American consumes 3,400 mg of sodium a day. The recommended daily allowance for people on dialysis or living with CKD varies from 750 mg - 2000 mg per day.
+Potassium-
+It's recommended that healthy men and women over the age of 19 consume at least 3,400 mg and 2,600 mg of potassium per day, respectively
+Haemoglobin-
+Hb level of >11 g/dl should be aimed for all the CKD patients. All the international guidelines and our clinical experiences taken together, we should consider administration of ESA when the Hb level becomes <11 g/dl in pre-dialysis patients and 10 g/dl in dialysis patients.
+Hypertension-
+Your kidneys play a key role in keeping your blood pressure in a healthy range. Diseased kidneys are less able to help regulate blood pressure. As a result, blood pressure increases. If you have CKD, high blood pressure makes it more likely that your kidney disease will get worse and you will have heart problems.
+Diabetes mellitus-
+One cause of kidney failure is diabetes mellitus, a condition characterised by high blood glucose (sugar) levels. Over time, the high levels of sugar in the blood damage the millions of tiny filtering units within each kidney. This eventually leads to kidney failure.
+Coronary artery disease-
+Chronic kidney disease (CKD) is an independent risk factor for coronary artery disease (CAD). Coronary artery disease is the leading cause of morbidity and mortality in patients with CKD. The outcomes of CAD are poorer in patients with CKD.
+Apetite-
+The progressive decline of glomerular filtration rate in chronic kidney disease patients is associated with a significant reduction in food intake. Approximately one third of chronic dialysis patients complain of a fair or poor appetite and this is related directly to poor patient outcomes.
+Pedal edema-
+When you have kidney disease, extra fluid and sodium in your circulation may cause edema. The edema associated with kidney disease usually occurs in your legs and around your eyes. Kidney damage. Damage to the tiny, filtering blood vessels in your kidneys can result in nephrotic syndrome
+Anaemia-
+Anemia is a common complication of chronic kidney disease (CKD). CKD means your kidneys are damaged and can't filter blood the way they should. This damage can cause wastes and fluid to build up in your body. CKD can also cause other health problems.
+Classification-
+Stage 1 with normal or high GFR (GFR > 90 mL/min)
+Stage 2 Mild CKD (GFR = 60-89 mL/min)
+Stage 3A Moderate CKD (GFR = 45-59 mL/min)
+Stage 3B Moderate CKD (GFR = 30-44 mL/min.
+Stage 4 Severe CKD (GFR = 15-29 mL/min)
+Stage 5 End Stage CKD (GFR <15 mL/min)
+
+
+Diabetes 
+-------------------
+Pregancy-Gestational diabetes
+A form of high blood sugar affecting pregnant women.
+Those who develop gestational diabetes are at higher risk of developing type 2 diabetes later in life.
+Glucose level-
+A fasting blood sugar level less than 100 mg/dL (5.6 mmol/L) is normal. A fasting blood sugar level from 100 to 125 mg/dL (5.6 to 6.9 mmol/L) is considered prediabetes. If it's 126 mg/dL (7 mmol/L) or higher on two separate tests, you have diabetes.
+Blood pressure-
+On the basis of recent studies, it would appear that a BP below 140/90 mm Hg should be recommended for all diabetic individuals, and around 135/85 mm Hg for most. BP should be closer to, but not below, 130/80 mm Hg for those subjects at the highest cardiovascular risk.
+Skin thickness-
+Skin thickness is primarily determined by collagen content and is increased in insulin-dependent diabetes mellitus (IDDM). We measured skin thickness in 66 IDDM patients aged 24-38 yr and investigated whether it correlated with long-term glycemic control and the presence of certain diabetic complications.
+Insulin-
+Insulin Level
+
+Insulin Level (SI Units*)
+
+Fasting
+
+< 25 mIU/L-Insulin Level
+< 174 pmol/L-Insulin Level (SI Units*)
+
+30 minutes after glucose administration
+
+30-230 mIU/L-Insulin Level
+
+208-1597 pmol/L-Insulin Level (SI Units*)
+
+1 hour after glucose administration
+
+18-276 mIU/L-Insulin Level
+
+125-1917 pmol/L-Insulin Level (SI Units*)
+
+2 hour after glucose administration
+
+16-166 mIU/L-Insulin Level
+
+111-1153 pmol/L-Insulin Level (SI Units*)
+
+≥3 hours after glucose administration
+
+< 25 mIU/L-Insulin Level
+
+< 174 pmol/L-Insulin Level (SI Units*)
+
+BMI-
+Increased BMI was associated with increased prevalence of diabetes mellitus, hypertension and dyslipidaemia in both studies (p < 0.001). For each condition, more than 75% of patients had BMI ≥ 25 kg/m2.
+Diabetes pedigree function-
+the diabetes pedigree function provides “a synthesis of the diabetes mellitus history in relatives and the genetic relationship of those relatives to the subject.”
+Age-
+Babies (0-2 years): very rare
+Toddlers (3-5 years): very rare
+Children (6-13 years): rare
+Teenagers (14-18 years): rare
+Young adults (19-40 years): common
+Adults (41-60 years): very common
+Seniors (60+ years): very common
+Outcome-
+Most of the morbidity and mortality of diabetes is due to the untoward outcomes associated with the disease: blindness, kidney failure, nerve damage, and cardiovascular disease.
+
+
+Lungs
+--------------
+
+A cancer that begins in the lungs and most often occurs in people who smoke.
+AGES AFFECTED
+Babies (0-2 years): extremely rare
+Toddlers (3-5 years): very rare
+Children (6-13 years): very rare
+Teenagers (14-18 years): very rare
+Young adults (19-40 years): rare
+Adults (41-60 years): common
+Seniors (60+ years): common
+Lung cancer from smoking-
+Cigarette smoking is the number one risk factor for lung cancer. In the United States, cigarette smoking is linked to about 80% to 90% of lung cancer deaths. Using other tobacco products such as cigars or pipes also increases the risk for lung cancer. 
+Area affected-
+Lung cancer starts when abnormal cells grow out of control in the lung. They can invade nearby tissues and form tumors. Lung cancer can start anywhere in the lungs and affect any part of the respiratory system. The cancer cells can spread, or metastasize, to the lymph nodes and other parts of the body.
+Alcohol consumption-
+found that alcohol consumption was associated with an increased risk for lung cancer among men consuming at least 21 drinks per week. 
+Result-The five-year survival rate for lung cancer is 56 percent for cases detected when the disease is still localized (within the lungs). However, only 16 percent of lung cancer cases are diagnosed at an early stage. For distant tumors (spread to other organs) the five-year survival rate is only 5 percent.
+
+
+Breast
+-------------------
+
+A cancer that forms in the cells of the breasts.
+Breast cancer can occur in women and rarely in men.
+
+Symptoms-
+Can have no symptoms, but people may experience:
+Breast: discomfort, inverted nipple, lumps, or nipple discharge
+Also common: redness, swollen lymph nodes, or thickening or puckering of the skin.
+
+Treatment-
+Depends on the stage at which the cancer has been occurred.
+It may be
+1.Surgical-
+~Mammaplasty -refers to a group of surgical procedures, the goal of which is to reshape or otherwise modify the appearance of the breast.
+~Tissue expansion-A tissue expander is an empty breast implant that your surgeon will fill with normal saline over about 6 to 8 weeks until it reaches the breast size that you and your surgeon decided on.
+~Lymph node dissection-Surgical removal of a lymph node.
+~Lumpectomy-
+Surgical removal of a lump(tumor) in the breast.
+~Mastectomy- Survival removal of some or all of the breast.
+Specialists consulted-
+Oncologist
+Palliative medicine
+Radiation oncologist
+Primary Care Provider
+Plastic surgeon
+Surgeon
